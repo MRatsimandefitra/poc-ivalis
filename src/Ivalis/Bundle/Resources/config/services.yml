@@ -1,0 +1,13 @@
+services:
+#    ivalis.example:
+#        class: Ivalis\Bundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    authentification.manager:
+        class: Ivalis\Bundle\Manager\AuthentificationManager
+        arguments: [@service_container]
+    user.repository:
+        class: Ivalis\Bundle\Repository\UserRepository
+        arguments: [@service_container]
+    http:
+        class: Ivalis\Bundle\Utils\Http
+        arguments: [@service_container]

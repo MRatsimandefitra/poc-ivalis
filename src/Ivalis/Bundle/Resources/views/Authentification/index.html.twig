@@ -1,0 +1,21 @@
+{% extends "IvalisBundle::layout.html.twig" %}
+{% trans_default_domain "messages" %} 
+{% block loginForm %}
+<div>
+    <form id="form-login" method ="post" action ="{{path('ivalis_connexion')}}">
+        <ul>
+            <li><label>{{ 'ivalis.login' | trans }}</label></li>
+            <li><input type="text" name="login"></li>
+            <li><label>{{ 'ivalis.password' | trans }}</label></li>
+            <li><input type="password" name="password"></li>
+            <li><input type="submit" value="{{ 'ivalis.connexion' | trans }}">
+            {% for msg in app.session.flashbag.get('infos') %}
+            <li class="infos">{{msg}}</li>
+            {% endfor %}
+            {% for msg in app.session.flashbag.get('error') %}
+            <li class="errors">{{msg}}</li>
+            {% endfor %}
+        </ul>
+    </form>
+</div>
+{% endblock %}

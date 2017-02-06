@@ -1,0 +1,7 @@
+ivalis_login:
+    path:     /login
+    defaults: { _controller: IvalisBundle:Authentification:index }
+    
+ivalis_connexion:
+    path:     /login_post
+    defaults: { _controller: IvalisBundle:Authentification:connexion }
