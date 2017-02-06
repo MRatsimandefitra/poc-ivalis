@@ -1,0 +1,14 @@
+#form-login{
+    margin:auto;
+}
+#form-login ul li{
+    list-style: none;
+    text-align: center;
+}
+.infos{
+    color:green;
+}
+.errors{
+    color:red;
+}
+
