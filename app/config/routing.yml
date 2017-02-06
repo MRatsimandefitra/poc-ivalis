@@ -1,0 +1,4 @@
+ivalis:
+    resource: "@IvalisBundle/Resources/config/routing.yml"
+    prefix:   /
+
