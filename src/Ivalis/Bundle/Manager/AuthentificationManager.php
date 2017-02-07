@@ -25,6 +25,7 @@ class AuthentificationManager {
     public function connexion($login,$password){
         $userRepository = $this->getContainer()->get("user.repository");
         $result = $userRepository->connexion($login,$password);
+        var_dump($result);
         return json_decode($result); 
     }
 }
