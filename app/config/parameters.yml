@@ -13,7 +13,7 @@ parameters:
     locale: fr
     secret: ThisTokenIsNotSoSecretChangeIt
     #host ws
-    ws_host: http://localhost:8080
+    ws_host: https://ivalis-poc-dev.herokuapp.com
     
     #Tous les url ws
     url_connexion:  %ws_host%/poc-ivalis/oauth/token
